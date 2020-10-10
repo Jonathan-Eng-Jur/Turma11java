@@ -24,7 +24,7 @@ public class Exercicio5 {
 		contador++; 
 		
 		}
-		while (x!=0);
+		while (x!=0); // TRAVA
 		{		
 		
 		

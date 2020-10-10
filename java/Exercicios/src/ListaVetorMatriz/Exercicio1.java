@@ -13,7 +13,26 @@ public class Exercicio1 {
 (d) Mostre na tela cada valor do vetor A, um em cada linha.
 
 	 */
+	Scanner leia = new Scanner (System.in);
+	int	A[] = {-5, -2, 0, 1, 5, 7};
+	
+	int x=0, soma=0;
+	
+
+	soma=A[0]+A[1]+A[5];
+	
+	
+	if (A[4]==5) {
 		
+		
+ System.out.printf("A soma dos valores das posições A[0], A[1] e A[5] é %d.\n", soma);
+ 
+	A[4]=100;}
+	
+	for (x=0;x<6;x++)
+		
+	{ System.out.printf("O valor na posição %d, é %d.\n", x, A[x]);}
+	
 
 	}
 
