@@ -6,7 +6,7 @@ app.controller('myCtrl', function($scope, $http) {
 
 
 $scope.salvar = function() {
-  $http.post("http://localhost:8080/categoria/categorias", {
+  $http.post("http://localhost:8080/jogos", {
     'id':$scope.id,
     'titulo':$scope.nome,
     'produto':$scope.data,
@@ -15,5 +15,13 @@ $scope.salvar = function() {
         
   })
   };   
+  
+  $scope.buscarTodos = function() {
+	  $http.get("http://localhost:8080/jogos").then(function(resposta)
+		{$scope.jogos = resposta.data;
+		  
+		} );
+  }
+  $scope.buscarTodos();
 
 });

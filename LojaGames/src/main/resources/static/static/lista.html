@@ -3,13 +3,19 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="controller.js">
+	
+</script>
+
 </head>
 <body>
 
 Bem-vindX a nossa Loja de Games <hr>
 	<a href="index.html"> Home </a> |
 	<a href="lista.html"> Lista de Jogos </a> |
-	<a href="adquirir.html">Adquirir </a> 
+	<a href="inserir.html">Adquirir </a> 
 	<a href="atualizar.html"> Atualizar </a> 
 	
 	<br>
@@ -25,12 +31,12 @@ Bem-vindX a nossa Loja de Games <hr>
 			<th>categoria</th>
 			
 		</tr>
-		<tr ng-repeat="manutencoes in manutencoes">
-					<td>{{manutencao.id}}</td>
-					<td>{{manutencao.titulo}}</td>
-					<td>{{manutencao.produto}}</td>
-					<td>{{manutencao.data}}</td>
-					<td>{{manutencao.categoria}}</td>		
+		<tr ng-repeat="jogos in jogos">
+					<td>{{jogos.id}}</td>
+					<td>{{jogos.titulo}}</td>
+					<td>{{jogos.produto}}</td>
+					<td>{{jogos.data}}</td>
+					<td>{{jogos.categoria}}</td>		
 					<td>editar | excluir</td>
 		</tr>
       
