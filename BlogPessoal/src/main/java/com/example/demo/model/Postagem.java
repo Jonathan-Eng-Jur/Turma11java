@@ -32,7 +32,7 @@ public class Postagem {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date date = new java.sql.Date(System.currentTimeMillis());
 	
-	@ManyToOne
+	@ManyToOne //MUITAS POSTAGENS PERTNCEM A UM TEMA
 	@JsonIgnoreProperties("postagem")
 	private Tema tema;
 	

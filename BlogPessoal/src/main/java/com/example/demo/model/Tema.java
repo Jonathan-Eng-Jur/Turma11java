@@ -24,6 +24,7 @@ import com.sun.istack.NotNull;
 		@NotNull
 		private String descricao;
 		
+		//UM TEMA TEM MUITAS POSTAGENS
 		@OneToMany(mappedBy="tema", cascade = CascadeType.ALL)
 		@JsonIgnoreProperties("tema")
 		private List<Postagem> postagem;
